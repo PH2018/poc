@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: accountms
+  profiles:
+    active: "dev"
+config:
+  providers:
+    -
+      name: provider1
+      url: https://provider1.com/v1/api/account/validate
+    -
+      name: provider2
+      url: https://provider2.com/v2/api/account/validate
+server:
+  port: 7001
